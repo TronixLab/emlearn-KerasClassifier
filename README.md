@@ -16,10 +16,10 @@ the generated model headers used by the Arduino project.
 
 ## Repository contents
 
-- `/tmp/workspace/TronixLab/emlearn-KerasClassifier/CropsRecommendation_Classification.ipynb` - notebook used to train and export the model
-- `/tmp/workspace/TronixLab/emlearn-KerasClassifier/CropsRecommendation_Classification.html` - exported notebook report
-- `/tmp/workspace/TronixLab/emlearn-KerasClassifier/crop_recommendation.csv` - dataset used for training
-- `/tmp/workspace/TronixLab/emlearn-KerasClassifier/emlearn_Arduino_Keras_CropReco/` - Arduino sketch and generated headers for inference
+- `CropsRecommendation_Classification.ipynb` - notebook used to train and export the model
+- `CropsRecommendation_Classification.html` - exported notebook report
+- `crop_recommendation.csv` - dataset used for training
+- `emlearn_Arduino_Keras_CropReco/` - Arduino sketch and generated headers for inference
 
 ## Install emlearn
 
@@ -43,9 +43,9 @@ library directory so the sketch can include `eml_net.h`.
 
 ## Use this project
 
-1. Open `/tmp/workspace/TronixLab/emlearn-KerasClassifier/CropsRecommendation_Classification.ipynb` to review the training and model export flow.
+1. Open `CropsRecommendation_Classification.ipynb` to review the training and model export flow.
 2. Ensure emlearn is installed with `pip install emlearn`.
 3. Run `python -m emlearn.arduino.install` to install the Arduino emlearn library.
-4. Open `/tmp/workspace/TronixLab/emlearn-KerasClassifier/emlearn_Arduino_Keras_CropReco/emlearn_Arduino_Keras_CropReco.ino` in the Arduino IDE.
+4. Open `emlearn_Arduino_Keras_CropReco/emlearn_Arduino_Keras_CropReco.ino` in the Arduino IDE.
 5. Build and upload the sketch to a supported board.
 6. Send comma-separated feature values over Serial to receive the predicted crop class and probability.
